@@ -11,4 +11,10 @@ public class VehicleTest {
         assertEquals(100.00, car.calculateToll());
     }
 
+    @Test 
+    void testMotorbikreTollFee() {
+        Motorbike motorbike = new Motorbike("ABC123");
+        assertEquals(50.00, motorbike.calculateToll());
+    }
+
 }
