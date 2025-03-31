@@ -38,4 +38,12 @@ public class TollStation {
         return vehicles;
     }
     
+    public void print() {
+        System.out.println("Toll Station: " + name + " in " + city);
+        System.out.println("Registered Vehicles:");
+        for (Vehicle vehicle : vehicles) {
+            System.out.println("- " + vehicle.getLicensePlate() + " (Toll: $" + vehicle.calculateToll() + ")");
+        }
+        System.out.println("Total Toll Collected: $" + totalTollCollected);
+    }
 }
